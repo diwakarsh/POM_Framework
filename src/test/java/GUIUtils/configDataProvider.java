@@ -27,6 +27,14 @@ public class configDataProvider {
 	{
 		return prop.getProperty("AppURL");	
 	}
+	public static String getRemote()
+	{
+		return prop.getProperty("Remote");	
+	}
+	public static String getHUBURL()
+	{
+		return prop.getProperty("HubURL");	
+	}
 }
 
 
