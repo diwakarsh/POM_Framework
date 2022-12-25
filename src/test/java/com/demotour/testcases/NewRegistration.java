@@ -13,12 +13,16 @@ import GUIUtils.Data_Supplier;
 public class NewRegistration extends Base {
 
 	@Test(dataProvider="Data",dataProviderClass = Data_Supplier.class)
-	public void ContactUs(Map<Object,Object> dataMap) throws IOException 
+	public void Registration(Map<Object,Object> dataMap) throws IOException 
 	{
 	
 		reportMessage=report.createTest("New Registration");
-		ExtentTest registrationRpt=reportMessage.createNode("Home Page");
-		RegistrationFunctions.navigateToRegistrationPage(driver, registrationRpt, dataMap);
+		ExtentTest homePageRpt=reportMessage.createNode("Home Page");
+		RegistrationFunctions.navigateToRegistrationPage(driver, homePageRpt);
+		
+		ExtentTest registrationRpt=reportMessage.createNode("Registration Page");
+		RegistrationFunctions.fillDataInRegistrationForm(driver, registrationRpt,dataMap);
+		
 	}	
 	
 }

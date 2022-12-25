@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-14T18:18:22 EST" name="Suite" finished-at="2022-12-14T18:18:40 EST" duration-ms="17925">
+  <suite started-at="2022-12-24T13:41:35 EST" name="Suite" finished-at="2022-12-24T13:41:47 EST" duration-ms="11590">
     <groups>
     </groups>
-    <test started-at="2022-12-14T18:18:22 EST" name="Registration" finished-at="2022-12-14T18:18:40 EST" duration-ms="17925">
+    <test started-at="2022-12-24T13:41:35 EST" name="Registration" finished-at="2022-12-24T13:41:47 EST" duration-ms="11590">
       <class name="com.demotour.testcases.NewRegistration">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-14T18:18:22 EST" name="setupSuite" finished-at="2022-12-14T18:18:22 EST" duration-ms="283" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-24T13:41:35 EST" name="setupSuite" finished-at="2022-12-24T13:41:35 EST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="initilizeDriver()[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-14T18:18:23 EST" name="initilizeDriver" finished-at="2022-12-14T18:18:37 EST" duration-ms="14052" status="PASS">
+        <test-method is-config="true" signature="initilizeDriver()[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-24T13:41:36 EST" name="initilizeDriver" finished-at="2022-12-24T13:41:41 EST" duration-ms="5064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeDriver -->
-        <test-method signature="ContactUs(java.util.Map)[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-14T18:18:37 EST" name="ContactUs" data-provider="Data" finished-at="2022-12-14T18:18:39 EST" duration-ms="2124" status="PASS">
+        <test-method signature="Registration(java.util.Map)[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-24T13:41:41 EST" name="Registration" data-provider="Data" finished-at="2022-12-24T13:41:47 EST" duration-ms="5643" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{SubjectHeading=Customer service, Flag=Yes, EmailAddress=test@email.com}]]>
+                <![CDATA[{Email=raj_sharma@email.com, UserName=raj_sharma, Address=1506, VeteranPkway, FirstName=Raj, PostalCode=31670, City=Macon, TestCaseName=TC01, Flag=Yes, Phone=7761237786, State=Georgia, Country=UNITED STATES, LastName=Sharma, Password=Welcome@123}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ContactUs -->
-        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-14T18:18:39 EST" name="quitDriver" finished-at="2022-12-14T18:18:40 EST" duration-ms="644" status="PASS">
+        </test-method> <!-- Registration -->
+        <test-method is-config="true" signature="quitDriver(org.testng.ITestResult)[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-24T13:41:47 EST" name="quitDriver" finished-at="2022-12-24T13:41:47 EST" duration-ms="360" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ContactUs status=SUCCESS method=NewRegistration.ContactUs(java.util.Map)[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5] output={null}]]]>
+                <![CDATA[[TestResult name=Registration status=SUCCESS method=NewRegistration.Registration(java.util.Map)[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-14T18:18:40 EST" name="publishReport" finished-at="2022-12-14T18:18:41 EST" duration-ms="895" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:com.demotour.testcases.NewRegistration@550ee7e5]" started-at="2022-12-24T13:41:47 EST" name="publishReport" finished-at="2022-12-24T13:41:47 EST" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
