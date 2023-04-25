@@ -6,4 +6,9 @@
       <class name="com.demotour.testcases.NewRegistration"/>
     </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="Flights">
+    <classes>
+      <class name="com.demotour.testcases.RegisterFlights"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

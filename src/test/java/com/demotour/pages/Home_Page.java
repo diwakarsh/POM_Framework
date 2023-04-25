@@ -28,6 +28,10 @@ public class Home_Page {
 	@FindBy(xpath="//input[@name='submit']")
 	private WebElement submit;
 	
+	@FindBy(xpath="//a[text()='Flights']")
+	private WebElement flights;
+
+	
 	public WebElement getRegister()
 	{
 		return register;
@@ -47,5 +51,9 @@ public class Home_Page {
 	public WebElement getSubmit()
 	{
 		return submit;
+	}
+	public WebElement getFlights()
+	{
+		return flights;
 	}
 }
