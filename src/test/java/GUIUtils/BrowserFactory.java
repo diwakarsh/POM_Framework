@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -23,6 +24,7 @@ public class BrowserFactory {
 			DesiredCapabilities caps=DesiredCapabilities.chrome();
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--incognito");
+			
 			caps.setCapability(ChromeOptions.CAPABILITY,options);
 			options.merge(caps);
 			WebDriverManager.chromedriver().setup();
@@ -41,8 +43,23 @@ public class BrowserFactory {
 		}
 		else if (browserName.equals("Firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
+			//System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");
+			DesiredCapabilities capsF=DesiredCapabilities.firefox();
+			FirefoxOptions ffOptions= new FirefoxOptions();
+			//ffOptions.addArguments("--incognito");
+			
+			capsF.setCapability(FirefoxOptions.FIREFOX_OPTIONS,ffOptions);
+			ffOptions.merge(capsF);
+			WebDriverManager.firefoxdriver().setup();
+			if(configDataProvider.getRemote().equalsIgnoreCase("True"))
+				try {
+					driver=new RemoteWebDriver(new URL(configDataProvider.getHUBURL()),ffOptions);
+				} catch (MalformedURLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			else
+			driver = new FirefoxDriver(ffOptions);
 		}
 		else if (browserName.equals("IE"))
 		{
